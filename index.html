@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Icon Website</title>
+        <title>Eneko Simon - CV</title>
         <!--Icons-->
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <!--Fonts-->
@@ -165,7 +165,8 @@
               </div>
               <div class="window-content">
                 <h4>Competencias Técnicas</h4>
-                <ul style="columns: 2; -webkit-columns: 2; -moz-columns: 2;">
+                <!-- style="columns: 2; -webkit-columns: 2; -moz-columns: 2;" -->
+                <ul>
                   <li>Desarrollo Full-stack
                     <ul>
                       <li>JavaScript</li>
@@ -321,12 +322,12 @@
                 if (char < text[line].length) {
                   output.textContent += text[line][char];
                   char++;
-                  setTimeout(typeLine, 40);
+                  setTimeout(typeLine, 30);
                 } else {
                   output.textContent += "\n";
                   line++;
                   char = 0;
-                  setTimeout(typeLine, 400);
+                  setTimeout(typeLine, 200);
                 }
               }
             }
@@ -334,7 +335,14 @@
             window.onload = typeLine;
           </script>
         <footer class="navbar">
-            <!-- Navbar content here -->
+          <div class="dropdown">
+              <button class="dropbtn">Idioma</button>
+              <div class="dropdown-content">
+                  <a href="en.html">English</a>
+                  <a href="index.html">Español</a>
+                  <a href="eus.html">Euskera</a>
+              </div>
+          </div>
         </footer>
         <script src="script.js"></script>
     </body>
