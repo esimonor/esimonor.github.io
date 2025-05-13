@@ -95,8 +95,50 @@ body::after {
     align-items: center;
     color: #cbd5e1;
     font-size: 14px;
-  } 
-  
+  }
+
+  .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+
+  .dropbtn {
+      background-color: #444;
+      color: white;
+      padding: 8px 12px;
+      cursor: pointer;
+      border: none;
+      font-size: 14px;
+      font-family: "Silkscreen", sans-serif;
+  }
+
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      bottom: 100%; /* Makes it go up */
+      left: 0;
+      background-color: #555;
+      min-width: 120px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+  }
+
+  .dropdown-content a {
+      color: white;
+      padding: 10px;
+      display: block;
+      text-decoration: none;
+  }
+
+  .dropdown-content a:hover {
+      background-color: #666;
+  }
+
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+
+
   .hidden {
     display: none;
   }
